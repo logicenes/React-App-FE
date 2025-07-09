@@ -7,7 +7,12 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  const [products] = useState(productData);
+  const [products, setProductsToDisplay] = useState(productData);
+
+  const deleteProduct = (productId) => {
+    const newList = products.filter((product) => product.id !== productId);
+    setProductsToDisplay(newList);
+  };
 
   return (
     <div className="app-container">
@@ -16,7 +21,7 @@ function App() {
         <Sidebar />
         <div className="content">
           <h1>Productlist</h1>
-          <List items={products} />
+          <List items={products} onDelete={deleteProduct} />
         </div>
       </div>
       <Footer />
