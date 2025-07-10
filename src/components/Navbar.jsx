@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
-    <header>
-      <h2>App Name idk</h2>
-      <p>Project from Farlon and Enes </p>
-      <img src="" alt="THE LOGO " />
-    </header>
+    <nav>
+      <Link to="/">Dashboard</Link> | 
+      <Link to="/about">About</Link>
+    </nav>
   );
 }
 

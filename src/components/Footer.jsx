@@ -1,9 +1,10 @@
 function Footer() {
   return (
-    <section>
-     <p>href: "https://github.com/logicenes/React-App-FE"</p>
-
-    </section>
+    <footer>
+      <p>
+        Project by <a href="https://github.com/logicenes/React-App-FE" target="_blank">logicenes</a>
+      </p>
+    </footer>
   );
 }
 

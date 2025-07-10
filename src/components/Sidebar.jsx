@@ -1,8 +1,8 @@
 function Sidebar() {
   return (
-    <section>
-      <p>Sidebar will be added</p>
-    </section>
+    <aside>
+      <p>Sidebar will go here.</p>
+    </aside>
   );
 }
 
